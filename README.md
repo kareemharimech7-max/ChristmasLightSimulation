@@ -1,65 +1,64 @@
 # Christmas Lights Simulation
 
-This repository contains a simple script to simulate a string of blinking Christmas lights using Python and Turtle graphics.
-
----
+This repository contains a simple script to simulate a string of blinking Christmas lights in the terminal. It uses ANSI escape codes to cycle through festive colors for each "light bulb."
 
 ## Requirements
 
 - Python 3.x
-- A terminal that supports Turtle graphics (for GUI simulation)
-
----
+- A terminal that supports ANSI escape codes
 
 ## Installation
 
 1. Clone this repository or download the script file.
 2. (Optional) Create a virtual environment and activate it:
-   ```powershell
-   python -m venv venv
-   venv\Scripts\activate  # On Windows
-   ```
-3. No additional dependencies required; Python's standard library is sufficient.
 
----
+   ```bash
+   python -m venv venv
+   # On macOS / Linux
+   source venv/bin/activate
+   # On Windows (PowerShell)
+   .\venv\Scripts\Activate.ps1
+   # On Windows (cmd)
+   venv\Scripts\activate.bat
+   ```
+
+3. Install any necessary dependencies (if applicable). For this script, Python's standard library is sufficient.
 
 ## Usage
 
-1. Open a terminal or command prompt in the same directory as the `Mistral.py` script.
+1. Open a terminal or command prompt in the same directory as the `christmas_lights.py` script.
 2. Run:
-   ```powershell
-   python Mistral.py
-   ```
-3. A window will appear showing a string of colored circles representing Christmas lights, blinking and cycling through festive colors.
-4. Press `Ctrl + C` or close the window to stop the simulation.
 
----
+   ```bash
+   python christmas_lights.py
+   ```
+
+3. You will see a string of colored "o" characters representing light bulbs, cycling through different ANSI colors.
+4. Press Ctrl + C to stop the simulation.
 
 ## Customization
 
-- **Number of Lights:** Change the value of `num_lights` in the script to adjust how many bulbs appear.
-- **Blink Delay:** Adjust the `time.sleep()` value in the code to make the lights switch colors faster or slower.
-- **Colors:** Modify the `colors` list to use your favorite festive colors.
-
----
+- **Number of Lights:** You can pass a new value to the `num_lights` parameter in the `print_christmas_lights` function call to change how many bulbs appear.
+- **Blink Delay:** Adjust the `delay` parameter to make the lights switch colors faster or slower.
 
 ## Example
 
-```powershell
-python Mistral.py
+Run:
+
+```bash
+python christmas_lights.py
 ```
 
-Sample output (the actual colors will be vivid in the Turtle graphics window):
+Sample output (the actual colors will be more vivid in a compatible terminal):
 
-    [Christmas lights blinking in a window]
-
----
+```
+Press Ctrl+C to stop the lights.
+o o o o o o o o o o o o o o o
+```
 
 ## Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull request if you have any ideas for improvements or additional features.
-
----
 
 ## License
 
